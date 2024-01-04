@@ -1,20 +1,20 @@
 class Enregistrement {
   DateTime dateEnreg = DateTime.now();
   String libelle;
-  double montantCredit;
-  double montantDebit;
+  double credit;
+  double debit;
   int numero;
 
   Enregistrement({
     this.numero = 0,
     this.libelle = "",
-    this.montantCredit = 0,
-    this.montantDebit = 0,
+    this.credit = 0,
+    this.debit = 0,
   });
 
-  double solde() => montantCredit - montantDebit;
+  double solde() => credit - debit;
 
   @override
   String toString() =>
-      "numero:$numero, date:${dateEnreg.day - dateEnreg.month - dateEnreg.year}, libelle:$libelle, credit:$montantCredit, debit:$montantDebit";
+      "numero:$numero, date:${dateEnreg.day - dateEnreg.month - dateEnreg.year}, libelle:$libelle, credit:$credit, debit:$debit";
 }
