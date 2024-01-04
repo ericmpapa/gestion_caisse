@@ -16,5 +16,5 @@ class Enregistrement {
 
   @override
   String toString() =>
-      "numero:$numero, date:${dateEnreg.day - dateEnreg.month - dateEnreg.year}, libelle:$libelle, credit:$credit, debit:$debit";
+      "numero:$numero, date:${dateEnreg.day} - ${dateEnreg.month} - ${dateEnreg.year}, libelle:$libelle, credit:$credit, debit:$debit";
 }

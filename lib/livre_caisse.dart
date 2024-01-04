@@ -22,7 +22,7 @@ class LivreCaisse {
 
   void afficherEnregistrementsParPeriode(DateTime debut, DateTime fin) {
     print(
-        'ENREGISTREMENTS DU ${debut.day - debut.month - debut.year} au ${fin.day - fin.month - fin.year}');
+        'ENREGISTREMENTS DU ${debut.day} - ${debut.month} - ${debut.year} au ${fin.day} - ${fin.month} - ${fin.year}');
     for (var enregistrement in _enregistrements) {
       if (enregistrement.dateEnreg.compareTo(debut) >= 0 &&
           enregistrement.dateEnreg.compareTo(fin) <= 0) {
